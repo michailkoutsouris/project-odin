@@ -61,7 +61,6 @@
   height: 100vh;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
   display: flexbox;
   background-color: var(--test-background);
   font-family: sans-serif;
@@ -90,6 +89,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
   height: 90vh;
 }
 
