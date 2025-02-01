@@ -49,4 +49,20 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 2000);
         }, 300); // Delay to allow hide transition
     }
+
+    // Loader script
+    const loader = document.getElementById('page-loader');
+    const progressBar = document.querySelector('.progress-bar .progress');
+    let progress = 0;
+    const interval = setInterval(() => {
+        progress += 1;
+        progressBar.style.width = progress + '%';
+        if (progress >= 100) {
+            clearInterval(interval);
+            loader.classList.add('fade-out');
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 1000); // Match the duration of the fade-out animation
+        }
+    }, 30); // Adjust the interval to match the desired loading time
 });
