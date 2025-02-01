@@ -68,12 +68,22 @@
   justify-content: center;
   align-items: center;
   z-index: 99999;
-  backdrop-filter: blur(var(--default-loader-blur));
   transition: var(--default-timer-xl);
 }
 
 .page-loader.fade-out {
   opacity: 0;
+}
+
+.loader-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(var(--default-loader-blur)) brightness(1);
+  z-index: -1;
 }
 
 .progress-bar {
