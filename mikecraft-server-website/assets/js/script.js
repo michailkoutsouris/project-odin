@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('click', function() {
         infoCard.classList.remove('clicked');
     });
-
+    
     const nameDivButton = document.querySelector('.name-div button');
     nameDivButton.addEventListener('click', function(event) {
         const textToCopy = 'Java Edition Server 1.21.4';
