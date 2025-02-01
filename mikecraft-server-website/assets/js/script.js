@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         infoCard.classList.remove('clicked');
     });
 
-    const nameDivButton = document.querySelector('.info-card .name-div button');
+    const nameDivButton = document.querySelector('.name-div button');
     nameDivButton.addEventListener('click', function(event) {
         const textToCopy = 'Java Edition Server 1.21.4';
         navigator.clipboard.writeText(textToCopy).then(function() {
