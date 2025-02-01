@@ -1,5 +1,5 @@
 # Define variables
-REPO_DIR := /Users/mike/project-odin
+REPO_DIR := ./mikecraft-server-website
 COMMIT_MESSAGE := "Netlify commit"
 
 # Default target
